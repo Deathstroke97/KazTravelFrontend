@@ -1,0 +1,65 @@
+.best-tours {
+  position: relative;
+  //@include size(597px, 410px);
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 300px;
+  color: #fff;
+  padding: 0 10px 30px 30px;
+
+  @media (min-width: $screen){
+    width: 597px !important;
+    height: 410px;
+    padding: 0 100px 30px 40px;
+
+
+  }
+  &-slider {
+    overflow: hidden;
+    max-height: 410px;
+  }
+  *:not(.best-tours-img) {
+    position: relative;
+    z-index: 1;
+  }
+  &-img {
+    @include abs-point(0, 0);
+    @include size(100%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    &:after {
+      content: '';
+      @include block(100%, 200px);
+      @include abs(auto, auto, 0, 0);
+      z-index: 1;
+      @include trans(all $transition-primary);
+      background: linear-gradient(rgba(#000, 0), #000);
+    }
+    img {
+      @extend .slide-img;
+    }
+  }
+  &-title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    @media (min-width: $screen){
+      font-size: 30px;
+      line-height: 39px;
+    }
+    a {
+      @include hover-link(#fff, rgba(#fff, .8));
+    }
+  }
+  &-date {
+    font-size: 18px;
+    position: relative;
+    z-index: 10;
+    display: block;
+    @media (min-width: $screen){
+      font-size: 20px;
+    }
+  }
+}

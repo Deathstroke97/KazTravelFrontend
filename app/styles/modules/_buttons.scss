@@ -1,0 +1,95 @@
+.btn {
+  border: none;
+  background-color: #E5E5E5;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 50px;
+  padding: 0 20px;
+  color: $color-primary;
+  min-width: 165px;
+  @include trans(all $transition-primary);
+  &:hover {
+    background-color: #d5d5d5;
+  }
+  &--white {
+    background-color: #fff;
+  }
+  &--blue {
+    background-color: #6D9FFF;
+    color: #fff;
+    &:hover {
+      background-color: #6D9FFF - 40;
+    }
+  }
+  &--submit {
+    background-color: #67A1D6;
+    color: #fff;
+    & + .btn {
+      margin-top: 20px;
+      @media (min-width: $middle){
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    &:hover {
+      background-color: #67A1D6 + 20;
+    }
+  }
+  &--remove {
+    background-color: #d9534f;
+    color: #fff;
+    & + .btn {
+      margin-top: 20px;
+      @media (min-width: $middle){
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    &:hover {
+      background-color: #d9534f + 20;
+    }
+  }
+  &[disabled] {
+    background-color: #a3a3a3;
+    opacity: .5;
+    cursor: default;
+    &:hover {
+      background-color: #a3a3a3;
+      opacity: .5;
+    }
+  }
+  &--check {
+    font-size: 12px;
+    font-weight: 500;
+    height: 21px;
+    min-width: 60px;
+    background-color: #F0ECE7;
+    border-radius: 2px;
+    border: none;
+    @include abs(auto, 15px, 12px);
+    @media (min-width: $screen){
+      bottom: 17px;
+      right: 45px;
+    }
+
+  }
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+}
+
+.btn--search {
+  background: url('/static/images/icons/icon-search-big.svg') center no-repeat transparent;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 0;
+  &:hover {
+    opacity: .7;
+  }
+}

@@ -1,0 +1,133 @@
+.themes {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: calc(100px - 28px);
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+    &-item {
+      background-color: #fff;
+      border-radius: 6px;
+      width: 510px;
+      height: 190px;
+      padding: 26px 28px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      cursor: pointer;
+      transition: box-shadow .3s;
+      &:nth-child(even) {
+        margin-left: 28px;
+      }
+      &:hover {
+        box-shadow: rgba(#000, .12) 0 0 70px;
+        .themes-list-title {
+          color: #6D9FFF
+        }
+        img {
+          display: none;
+          &.hover {
+            display: block;
+          }
+        }
+      }
+      @media (min-width: $tablet) and (max-width: $screen) {
+        width: 460px;
+      }
+      @media (max-width: $tablet) {
+        &:nth-child(even) {
+          margin-left: 0;
+        }
+      }
+      @media (max-width: $small) {
+        padding: 26px 28px 20px 20px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &-figcaption {
+      width: 268px;
+      @media (min-width: $tablet) and (max-width: $screen) {
+        width: 245px;
+      }
+      @media (max-width: $small) {
+        width: 100%;
+      }
+    }
+    &-img {
+      @media (min-width: $tablet) and (max-width: $screen) {
+        width: 150px;
+        img {
+          width: inherit;
+        }
+      }
+      img {
+        &.hover {
+          display: none;
+        }
+      }
+    }
+    &-title {
+      font-size: 20px;
+      margin-bottom: 5px;
+      @media (max-width: $small) {
+        margin-top: 5px;
+      }
+    }
+    &-desc {
+      font-size: 18px;
+    }
+  }
+}
+
+.theme {
+  &-item {
+    &-top {
+      margin-top: -100px;
+      margin-bottom: 88px;
+      height: 431px;
+      position: relative;
+      padding-top: 100px;
+      display: flex;
+      justify-content: center;
+      .sort-block {
+        justify-content: center;
+        .select {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: $small) {
+        height: 250px;
+        margin-bottom: 30px;
+      }
+    }
+    &-img {
+      position: absolute;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      width: 100%;
+      height: inherit;
+      z-index: -1;
+      background-color: #000;
+      &:before {
+        content: '';
+        @include block(100%, 250px);
+        @include abs-point(0, 0);
+        background: linear-gradient(rgba(#000, .85), rgba(#000, 0));
+        z-index: 1;
+      }
+      img {
+        object-fit: cover;
+        object-position: 0 -20px;
+        width: inherit;
+        height: inherit;
+        opacity: .9;
+      }
+    }
+  }
+}

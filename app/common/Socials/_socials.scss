@@ -1,0 +1,129 @@
+.socials {
+  display: none;
+  z-index: 44;
+  textarea {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    //visibility: hidden;
+  }
+  @media (min-width: $screen){
+    display: block;
+    @include abs-point(50px, -100px);
+    ul {
+      li {
+        @include size(52px);
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a, div {
+          @include block(100%);
+        }
+        a {
+          border-radius: 50%;
+          @include trans(all $transition-primary);
+          position: relative;
+          box-shadow: rgba(#000, .09) 0 0 0px;
+          &:after {
+            @include block(71px);
+            opacity: .2;
+          }
+          &:before {
+            @include block(90px);
+            opacity: .1;
+          }
+          &:before, &:after {
+            content: '';
+            @include abs-point(50%, 50%);
+            border: 1px solid #B8B8B8;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            @include trans(all $transition-primary ease-in);
+          }
+          &:hover {
+            &:before, &:after {
+              transform: translate(-50%, -50%) scale(1);
+            }
+
+            box-shadow: rgba(#000, .09) 0 0 20px;
+            background-color: #F8F6F4;
+
+          }
+        }
+        svg {
+          @include size(100%);
+          path {
+            @include trans(all $transition-primary);
+            &.border {
+              stroke: #B8B8B8 !important;
+            }
+            &.icon {
+              fill: #B8B8B8 !important;
+            }
+          }
+        }
+        &.copy-link {
+          @include trans(all $transition-primary);
+          border-radius: 5em;
+          border: 1px solid #B8B8B8;
+          overflow: hidden;
+
+          a {
+            display: flex;
+            align-items: center;
+            @include size(52px);
+            border-radius: 50%;
+            border: none;
+            color: #2F2E41;
+            font-size: 18px;
+            font-weight: 500;
+            &:before, &:after {
+              content: none;
+            }
+
+          }
+          span {
+            white-space: nowrap;
+            display: inline-block;
+            margin-left: 5px;
+            @include trans(all $transition-primary);
+          }
+          &:hover {
+            width: 150px;
+            border: 1px solid #B8B8B8;
+            background-color: #F8F6F4;
+            a {
+              border: none;
+              box-shadow: none;
+
+              svg {
+                path {
+                  fill: #2A7CD8;
+                }
+              }
+            }
+
+          }
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          }
+          svg {
+            @include size(26px);
+            path {
+              fill: #B8B8B8;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

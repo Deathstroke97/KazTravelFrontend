@@ -1,0 +1,550 @@
+.agency {
+  width: 100%;
+  //padding: 70px 0;
+  .publications-tags {
+    padding-top: 0;
+  }
+
+  &-website {
+    text-align: center;
+    @media (min-width: $screen){
+      margin: -20px 0;
+    }
+
+  }
+
+
+  &-img {
+    @include size(63px);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @media (min-width: $middle){
+
+      @include size(70px);
+    }
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      //max-width: 100%;
+      //border-radius: 50%;
+    }
+  }
+
+  &-title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    color: $color-primary;
+    letter-spacing: -0.17px;
+    line-height: 59px;
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 15px;
+    margin: 30px 0;
+    background: #F7F5F2;
+    border-radius: 12px;
+    @media (min-width: $middle) {
+      flex-direction: row;
+      //margin-top: 70px;
+      align-items: center;
+    }
+    @media (min-width: $screen) {
+      padding: 40px 30px;
+      font-size: 18px;
+      margin: 70px 0;
+    }
+
+    &-address,
+    &-mail,
+    &-phone {
+      position: relative;
+      margin: 0 0 15px 0;
+      @media (min-width: $middle){
+        margin: 0;
+        width: 25%;
+        flex-shrink: 0;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+      }
+    }
+
+    &-address {
+      padding-left: 25px;
+      @media (min-width: $middle){
+        width: 28%;
+      }
+      &::before {
+        width: 14px;
+        background-image: url("/static/images/icons/icon-pin-1.svg");
+      }
+    }
+    &-mail {
+      padding-left: 30px;
+      @media (min-width: $middle){
+        width: 22%;
+        word-break: break-all;
+      }
+      &::before {
+        width: 18px;
+        background-image: url("/static/images/icons/icon-email.svg");
+      }
+    }
+    &-phone {
+      padding-left: 25px;
+      font-weight: 900;
+      margin: 0;
+      span {
+        display: block;
+      }
+      &::before {
+        width: 15px;
+        background-image: url("/static/images/icons/icon-call-blue.svg");
+      }
+    }
+
+    .socials {
+      position: static;
+      z-index: 1;
+      @media (min-width: $middle){
+        width: 25%;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        height: 40px;
+        ul {
+          display: flex;
+          width: 100%;
+          justify-content: flex-start;
+          li {
+            margin-bottom: 0;
+            @include size(40px);
+            margin-right: 5px;
+            &:last-child {
+              margin-right: 0;
+            }
+            &.copy-link {
+              flex-shrink: 0;
+              &:hover {
+                width: 130px;
+
+              }
+              a {
+                @include size(40px);
+                font-size: 16px;
+                svg {
+                  @include size(20px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  &-about {
+    color: $color-primary;
+
+    &-title {
+      color: $color-primary;
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 55px;
+    }
+
+    &-text {
+      opacity: 0.74;
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+
+  &-tours {
+    //margin-bottom: 30px;
+    margin: 0 -30px 30px;
+    @media (min-width: $middle){
+      margin: 0 0 60px;
+      //margin-bottom: 60px;
+    }
+    @media (min-width: $tablet){
+      margin-bottom: 90px;
+    }
+    @media (min-width: $screen){
+      margin-bottom: 120px;
+    }
+
+
+
+    &-title {
+      margin-bottom: 20px;
+      font-size: 38px;
+      font-weight: 400;
+      color: #3E3D53;
+      line-height: 55px;
+    }
+
+    // Tags list
+    &-tags {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      list-style: none;
+      margin: 0 -10px;
+      margin-bottom: 70px;
+
+      &-item {
+        margin: 0 10px;
+        padding: 7px 13px;
+        background: #E3E3E3;
+        color: #3E3D53;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  &-tours-item {
+    &-tab {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px;
+      color: #ffffff;
+      background: #6D9FFF;
+      border-radius: 4px;
+      @media (min-width: $middle) {
+        flex-direction: row;
+        align-items: center;
+      }
+      &-description {
+        margin: 0 0 15px 0;
+        @media (min-width: $middle) {
+          margin: 0;
+        }
+      }
+      &-title {
+        font-size: 26px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 27px;
+        margin-bottom: 5px;
+        max-width: 800px;
+      }
+      &-details {
+        span {
+          position: relative;
+          margin-right: 18px;
+          font-size: 18px;
+          &::after {
+            position: absolute;
+            content: "\2022";
+            display: block;
+            top: -3px;
+            right: -12px;
+            font-size: 20px;
+          }
+          &:last-child {
+            &::after {
+              content: "";
+            }
+          }
+        }
+      }
+      &-toggle {
+        position: relative;
+        top: 12px;
+        right: auto;
+        transform: translateY(-50%);
+        cursor: pointer;
+        @media (min-width: $middle) {
+          right: 40px;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 30px;
+          height: 30px;
+          top: 50%;
+          right: -35px;
+          transform: translateY(-50%) rotate(90deg);
+          background: url("/static/images/icons/icon-next-1.svg") no-repeat;
+          background-position: center;
+          @include trans(all $transition-primary);
+        }
+      }
+    }
+    &-content {
+      width: 100%;
+      padding: 0 10px;
+      background-color: #ededed;
+      max-height: 0;
+      margin-bottom: 5px;
+      overflow: hidden;
+      @include trans(all $transition-primary);
+      @media (min-width: $middle) {
+        padding: 0 60px;
+      }
+      &-title {
+        text-align: center;
+        font-size: 30px;
+        margin: 0 0 30px 0;
+      }
+      .content-slider {
+        margin: 0 0 60px 0;
+        @media (min-width: $screen){
+          min-height: 500px;
+        }
+      }
+      &-roadmap {
+        position: relative;
+        margin: 0 0 60px 0;
+        &-progress {
+          position: absolute;
+          display: none;
+          left: 0;
+          top: 15px;
+          width: 2px;
+          background-color: #b1b1b1;
+          @media (min-width: $middle) {
+            display: block;
+          }
+          &-dot {
+            position: absolute;
+            display: block;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: #ededed;
+            &::before {
+              position: absolute;
+              content: "";
+              top: 12px;
+              left: 12px;
+              width: 18px;
+              height: 18px;
+              border-radius: 18px;
+              background-color: #b1b1b1;
+            }
+          }
+        }
+        &-progress-container {
+          position: absolute;
+          display: none;
+          left: -20px;
+          top: 15px;
+          width: 40px;
+          overflow: hidden;
+          height: 0;
+          @include trans(height $transition-long);
+          @media (min-width: $middle) {
+            display: block;
+          }
+        }
+        &-progress--highlight {
+          @extend .agency-tours-item-content-roadmap-progress;
+          position: relative;
+          left: 20px;
+          top: 0;
+          background-color: #febf3d;
+          &-dot {
+            @extend .agency-tours-item-content-roadmap-progress-dot;
+            &::before {
+              background-color: #febf3d;
+            }
+          }
+        }
+        &-list {
+          margin: 0;
+          position: relative;
+          @media (min-width: $middle) {
+            margin: 0 0 0 40px;
+          }
+          &-item {
+            position: relative;
+            padding: 20px 30px;
+            border-radius: 6px;
+            background-color: #ffffff;
+            margin: 0 0 8px 0;
+            &-header {
+              display: block;
+              font-size: 20px;
+              font-weight: 700;
+              margin-bottom: 7px;
+              a {
+                display: inline-block;
+                @include hover-link(#3e3d53, $color-blue);
+              }
+            }
+            &-attributes {
+              display: flex;
+              margin-bottom: 7px;
+              flex-direction: column;
+              @media (min-width: $middle) {
+                flex-direction: row;
+              }
+              span {
+                display: block;
+                position: relative;
+                margin: 0 30px 10px 0;
+                padding-left: 30px;
+                font-size: 17px;
+                &.type {
+                  display: flex;
+                  align-items: center;
+                  padding-left: 0;
+                  img {
+                    margin-right: 15px;
+                  }
+                  @media (min-width: $middle){
+                    padding-left: 0;
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+                @media (min-width: $middle) {
+                  margin: 0 30px 0 0px;
+                  padding-left: 25px;
+                }
+                  &.afoot {
+                  &::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 19px;
+                    height: 100%;
+                    left: -35px;
+                    background: url("/static/images/icons/icon-afoot.svg") no-repeat;
+                    background-position: center;
+                  }
+                }
+                &.distance {
+                  &::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 13px;
+                    height: 100%;
+                    left: 0px;
+                    background: url("/static/images/icons/icon-pin.svg") no-repeat;
+                    background-position: center;
+                  }
+                }
+                &.oncar {
+                  &::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 27px;
+                    height: 100%;
+                    left: -35px;
+                    background: url("/static/images/icons/icon-car.svg") no-repeat;
+                    background-position: center;
+                  }
+                }
+                &.onbus {
+                  &::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 18px;
+                    height: 100%;
+                    left: -35px;
+                    background: url("/static/images/icons/icon-bus.svg") no-repeat;
+                    background-position: center;
+                  }
+                }
+              }
+            }
+            &-description {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      &-tariffs {
+        border-radius: 6px;
+        padding: 0;
+        background-color: #ffffff;
+        margin: 0 0 60px 0;
+        &-plan {
+          display: flex;
+          justify-content: space-between;
+          padding: 18px 30px;
+          border-bottom: 1px solid #ededed;
+          flex-direction: column;
+          @media (min-width: $middle) {
+            flex-direction: row;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+          &-title {
+            color: #3e3d53;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          &-value {
+            color: #3e3d53;
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  &-tours-item--unfolded {
+    .agency-tours-item-tab-toggle {
+      &::after {
+        transform: translateY(-50%) rotate(270deg);
+      }
+    }
+    .agency-tours-item-content {
+      padding: 20px 10px;
+      max-height: 100%;
+      @media (min-width: $middle) {
+        padding: 50px 60px;
+      }
+    }
+  }
+}

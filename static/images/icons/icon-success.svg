@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="успех-форма" transform="translate(-665.000000, -220.000000)">
+            <g id="Group" transform="translate(666.000000, 221.000000)">
+                <circle id="Oval-15-Copy" fill="#77C372" cx="52" cy="52" r="38"></circle>
+                <g id="done-tick" transform="translate(32.000000, 34.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M38.496767,2.05395398 L37.425715,1.09117068 C35.64786,-0.507380716 32.9762655,-0.329194975 31.4066344,1.49200326 L13.4892688,22.2789744 L8.08083134,17.4051506 C6.30485226,15.8048071 3.63284993,15.9794086 2.06134293,17.7986441 L1.11434439,18.8950667 C0.346371073,19.7836913 -0.0523780305,20.955894 0.00552989824,22.1532715 C0.0640087502,23.3499662 0.574251007,24.473441 1.42484508,25.2766422 L11.338764,34.7757002 C12.1971063,35.6190957 13.3474351,36.0589277 14.5232108,35.9936442 C15.6989864,35.9285313 16.7982583,35.3633377 17.5663132,34.429484 L38.9551368,8.42614235 C39.7023938,7.51763402 40.0739017,6.33587341 39.9877738,5.14097075 C39.9017275,3.94521471 39.3655491,2.83496735 38.496767,2.05395398 Z" id="Shape"></path>
+                </g>
+                <circle id="Oval-15" stroke="#77C372" stroke-width="2" cx="52" cy="52" r="52"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pencil-edit-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lk-turoperatora-setting" transform="translate(-1007.000000, -261.000000)" fill="#B7B7B7" fill-rule="nonzero">
+            <g id="main" transform="translate(363.000000, 156.000000)">
+                <g id="pencil-edit-button" transform="translate(644.000000, 105.000000)">
+                    <path d="M9.94919518,2.83708099 L13.2039571,6.31216908 L4.96525588,15.1086584 L1.71233929,11.6335703 L9.94919518,2.83708099 Z M15.6736919,1.99896942 L14.2221933,0.449199443 C13.6612392,-0.149733148 12.7503657,-0.149733148 12.1875058,0.449199443 L10.7971153,1.9337241 L14.0518772,5.4088445 L15.6736919,3.67722744 C16.1087694,3.21266143 16.1087694,2.46350312 15.6736919,1.99896942 Z M0.00905723451,16.5180864 C-0.050175258,16.802711 0.190505902,17.0577491 0.457112621,16.9885309 L4.08399861,16.0496121 L0.831082015,12.574524 L0.00905723451,16.5180864 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

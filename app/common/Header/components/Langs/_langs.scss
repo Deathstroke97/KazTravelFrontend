@@ -1,0 +1,87 @@
+.langs  {
+  position: relative;
+  display: flex;
+
+  &-current {
+    width: 35px;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: none;
+    @media (min-width: $tablet){
+      display: block;
+    }
+    input {
+      letter-spacing: 1.1px;
+      font-size: 14px;
+      font-weight: 700;
+      width: 100%;
+      color: #101943;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding-right: 10px;
+      @include bg-size('icons/icon-lang-blue.svg', auto auto, 100% 50%);
+
+    }
+
+  }
+  &-select {
+
+    //display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 30px);
+    border-top: 1px solid #DEDEDE;
+    padding-top: 25px;
+
+    @media (min-width: $tablet){
+      @include abs-point(100%, 0);
+      border-top: none;
+      display: none;
+      background-color: #fff;
+      padding: 3px 0;
+      width: 40px;
+      border-radius: 3px;
+      box-shadow: rgba(#000, .3) 0 5px 20px;
+    }
+    li {
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 33%;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      &.active, &:hover {
+        color: #fff;
+        background-color: #3379FF;
+      }
+      @media (min-width: $tablet){
+        border-radius: 0;
+        font-weight: normal;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: left;
+        padding: 0 5px;
+        text-transform: none;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      &:hover {
+        //background-color: #f0f0f0;
+        color: $color-blue;
+      }
+    }
+  }
+  &--open {
+    .langs-select {
+      display: block;
+    }
+  }
+}

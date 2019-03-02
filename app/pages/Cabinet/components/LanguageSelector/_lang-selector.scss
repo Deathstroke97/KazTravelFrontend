@@ -1,0 +1,56 @@
+.lang-selector {
+  margin-bottom: 30px;
+  &-list {
+    @media (min-width: $screen){
+      margin-bottom: 35px;
+    }
+    li {
+      display: inline-block;
+      margin-right: 6px;
+      vertical-align: top;
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        @include hover-link($color-primary, #fff);
+        height: 28px;
+        line-height: 28px;
+        border-radius: 2px;
+        background-color: #E1E1E1;
+        padding: 0 10px 0 15px;
+        img {
+          @include block(14px);
+          flex-shrink: 0;
+          margin-right: 7px;
+
+        }
+      }
+      &.active, &:hover {
+        a {
+          background-color: #67A1D6;
+          color: #fff;
+        }
+      }
+      &.add-lang {
+        margin-right: 0;
+        a {
+          background-color: #fff;
+          border: 1px solid #67A1D6;
+          padding: 0 10px;
+          @include hover-link($color-primary);
+
+        }
+      }
+    }
+  }
+  &-add {
+    background-color: #F0ECE7;
+    @media (min-width: $screen){
+      padding: 30px 40px;
+      margin: 0 -40px;
+    }
+  }
+
+
+}

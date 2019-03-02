@@ -1,0 +1,119 @@
+.popup {
+  @include fixed-point(0, 0);
+  @include size(100%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 555;
+  background-color: rgba(#000, .5);
+  @include trans(all $transition-primary);
+  opacity: 0;
+  visibility: hidden;
+  &--open {
+    visibility: visible;
+    opacity: 1;
+    .popup-dialog {
+      transform: translate3d(0,0,0);
+    }
+  }
+  &-close {
+    @include block(10px);
+    @include abs(11px, 12px);
+    z-index: 5;
+    @include bg-size('icons/popup-close.svg');
+    cursor: pointer;
+    @media (min-width: $middle){
+      opacity: .4;
+      @include size(24px);
+      @include abs(37px, 36px);
+    }
+
+  }
+  &-dialog {
+    position: relative;
+    padding: 0;
+    max-width: 777px;
+    width: calc(100% - 60px);
+    height: 166px;
+    display: block;
+    border: none;
+    background-color: #fff;
+    margin: 100px 0 50px;
+    overflow: hidden;
+    @include trans(transform $transition-primary);
+    transform: translate3d(0, 50px, 0);
+    border-radius: 8px;
+    @media (min-width: $middle){
+      height: 536px;
+      margin: 5% 0;
+      flex-shrink: 0;
+    }
+
+  }
+  &-slider {
+    height: 100%;
+    position: relative;
+    .slick-arrow {
+      position: absolute;
+      bottom: 4px;
+      z-index: 2;
+      @include block(19px);
+      border-radius: 50%;
+      padding: 0;
+      font-size: 0;
+      border: none;
+      &.slick-prev {
+        left: 11px;
+        @include bg-size('icons/popup-prev.svg');
+      }
+      &.slick-next {
+        right: 11px;
+        @include bg-size('icons/popup-next.svg');
+      }
+      @media (min-width: $middle){
+        bottom: 15px;
+        @include size(62px);
+        &.slick-prev {
+          left: 35px;
+
+        }
+        &.slick-next {
+          right: 35px;
+
+        }
+      }
+
+    }
+    div {
+      max-height: 100%;
+      height: 100%;
+    }
+    &-item {
+      position: relative;
+      display: flex !important;
+      //height: 536px;
+      justify-content: center;
+      max-height: 100%;
+      img {
+        @extend .slide-img;
+      }
+      figcaption {
+        @include abs(auto, auto, 0, 0);
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+        text-align: center;
+        padding: 9px 0;
+
+        font-size: 8px;
+        @media (min-width: $middle){
+          padding: 31px 100px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

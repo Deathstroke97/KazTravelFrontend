@@ -1,0 +1,75 @@
+.map-with-attractions {
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden;
+  &-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    z-index: 1;
+    .container {
+      height: 100%;
+      padding: 0;
+      @media (min-width: $middle) {
+        padding: 0 30px;
+      }
+    }
+  }
+  &-list {
+    background: #fff;
+    padding: 25px 35px;
+    &-title {
+      color: #3e3d53;
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    &-items {
+      list-style: none;
+      padding: 0;
+      &-item {
+        margin-bottom: 16px;
+        @include trans(all $transition-primary);
+        a {
+          display: flex;
+        }
+        &-preview {
+          width: 127px;
+          margin-right: 23px;
+          @include trans(all $transition-primary);
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        &-description {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 1;
+          &-title {
+            color: #3e3d53;
+            font-size: 22px;
+            font-weight: 700;
+          }
+          &-link {
+            color: #6d9fff;
+            font-size: 14px;
+            text-decoration: underline;
+          }
+        }
+      }
+      &-item--active {
+        .map-with-attractions-list-items-item-preview {
+          width: 150px;
+        }
+        .map-with-attractions-list-items-item-description {
+          .map-with-attractions-list-items-item-description-title {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}

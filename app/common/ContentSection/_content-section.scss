@@ -1,0 +1,32 @@
+.content-section {
+  position: relative;
+  &--blue {
+    //background-color: #67A1D6;
+    background: url('/static/images/bg-shape-3.svg') -880px -830px no-repeat,
+    #67A1D6 url('/static/images/bg-shape-3.svg') calc(100% + 500px) calc(100% + 830px) no-repeat;
+    padding-bottom: 50px;
+    @media (min-width: $screen){
+      background: #67A1D6;
+      padding-bottom: 132px;
+
+    }
+  }
+  &--white {
+    background-color: #fff;
+  }
+  &--shape {
+    background: url('/static/images/bg-shape-4.svg') -850px -830px no-repeat;
+    overflow: hidden;
+    @media (min-width: $screen){
+      min-height: 500px;
+    }
+    &:after {
+      content: '';
+      @include block(492px, 539px);
+      border: 60px solid #F0ECE7;
+      @include abs(60%, -120px);
+      border-radius: 50%;
+    }
+
+  }
+}

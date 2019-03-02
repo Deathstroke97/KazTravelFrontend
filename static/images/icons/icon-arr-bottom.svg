@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="11px" viewBox="0 0 10 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>down-arrow copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="add-rout" transform="translate(-872.000000, -556.000000)" fill="#4F6B81" fill-rule="nonzero">
+            <g id="Group" transform="translate(401.000000, 528.000000)">
+                <g id="Group-2" transform="translate(4.000000, 0.000000)">
+                    <g id="down-arrow-copy" transform="translate(467.000000, 28.000000)">
+                        <path d="M9.98167322,6.09790266 C9.94449402,6.01223027 9.85773512,5.95632522 9.76145799,5.95632522 L7.14986534,5.95632522 L7.14986534,0.229096866 C7.14986534,0.102639348 7.04308687,0 6.91152972,0 L3.09827153,0 C2.96671438,0 2.85993591,0.102639348 2.85993591,0.229096866 L2.85993591,5.9563467 L0.238333477,5.9563467 C0.142056343,5.9563467 0.0552974414,6.01225174 0.0181182467,6.09747311 C-0.0185917394,6.18314551 0.00142782699,6.28166124 0.0695971317,6.34718805 L4.82424415,10.9326476 C4.8690424,10.9757093 4.92959265,11 4.99298049,11 C5.05636834,11 5.11691859,10.9757093 5.16171684,10.9330986 L9.93019433,6.34763907 C9.99836364,6.28209078 10.0188524,6.18359653 9.98167322,6.09790266 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

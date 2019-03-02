@@ -1,0 +1,51 @@
+/**
+ * Common
+ */
+export const SET_LANG = 'SET_LANG';
+export const TOGGLE_MODAL = 'TOGGLE_MODAL';
+export const SET_VIEWPORT_SIZE = 'SET_VIEWPORT_SIZE';
+export const DONE = '_DONE';
+export const FAIL = '_FAIL';
+
+/**
+ * Main Page
+ */
+export const TRENDS__SET_SEASON = 'TRENDS/SET_SEASON';
+export const TRENDS__SET_ARTICLES = 'TRENDS/SET_ARTICLES';
+export const TRENDS__ACTIVE_ARTICLE = 'TRENDS/ACTIVE_ARTICLE';
+export const TRENDS__SET_TRENDS_LIST = 'TRENDS/SET_TRENDS_LIST';
+export const TRENDS__SET_ACTIVE_TREND = 'TRENDS/SET_ACTIVE_TREND';
+
+/**
+ * Publications
+ */
+export const SET_PUB_LIST = 'PUBLICATIONS/SET_LIST_DATA';
+export const SET_PUB_PAGE = 'PUBLICATIONS/SET_PAGE_DATA';
+export const SET_PUB_POPULAR = 'PUBLICATIONS/SET_PUB_POPULAR';
+export const SET_PUB_RECOMMENDED = 'PUBLICATIONS/SET_PUB_RECOMMENDED';
+
+
+/**
+ * Auth
+ */
+// export const GET_USER = 'AUTH/GET_USER';
+export const SET_USER = 'AUTH/SET_USER';
+export const REGISTRATION = 'AUTH/REGISTRATION';
+export const UPDATE_USER = 'AUTH/UPDATE_USER';
+export const CHECK_PHONE = 'AUTH/CHECK_PHONE';
+export const CHECK_EMAIL = 'AUTH/CHECK_EMAIL';
+// export const SEND_SMS_CODE = 'AUTH/SEND_SMS_CODE';
+
+
+/**
+ * Cabinet
+ */
+export const FETCH_ROUTES = 'CABINET/FETCH_ROUTES';
+export const CANCEL_EDIT = 'CABINET/CANCEL_EDIT';
+export const EDIT_ITEM = 'CABINET/EDIT_ITEM';
+export const SAVE_SHOP = 'CABINET/SAVE_SHOP';
+export const SAVE_ROUTE = 'CABINET/SAVE_ROUTE';
+export const UPDATE_SHOP = 'CABINET/UPDATE_SHOP';
+export const UPDATE_ROUTE = 'CABINET/UPDATE_ROUTE';
+export const DELETE_ITEM = 'CABINET/DELETE_ROUTE';
+export const FETCH_SHOPS = 'CABINET/FETCH_SHOPS';

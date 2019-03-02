@@ -1,0 +1,47 @@
+.dev-page {
+  text-align: center;
+  height: calc(100vh - 50px);
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 13vh;
+  @media (min-width: $tablet){
+    height: calc(100vh - 85px);
+  }
+  @media (min-width: $screen){
+    height: calc(100vh - 124px);
+    min-height: 550px;
+
+
+
+    p {
+      font-size: 18px;
+      margin: 10px 0 0;
+    }
+
+  }
+  .content-title {
+    margin-bottom: 0;
+  }
+  .btn {
+    margin-top: 25px;
+
+    @media (min-width: $middle){
+      margin-top: 35px;
+      width: 235px;
+      height: 55px;
+    }
+  }
+  &-icon {
+    img {
+      max-width: 100%;
+    }
+    margin-bottom: 20px;
+    @media (min-width: $middle){
+      margin-bottom: 35px;
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+// fonts
+$font-primary: 'Roboto', Helvetica, Arial, sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+
+// colors
+$color-orange: #F9C23B;
+$color-primary: #3E3D53;
+$color-blue: #3379FF;
+
+// transitions
+$transition-primary: .3s;
+$transition-long: .6s;
+$easing: cubic-bezier(.19,1,.22,1);
+
+
+$imgBase: '/static/images/';
+
+// breakpoints
+$small: 560px;
+$middle: 760px;
+$tablet: 1000px;
+$screen: 1170px;
+

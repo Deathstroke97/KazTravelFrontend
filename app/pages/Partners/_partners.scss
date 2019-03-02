@@ -1,0 +1,104 @@
+.partners {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet){
+    margin-bottom: 80px;
+  }
+  @media (min-width: $screen){
+    margin-bottom: 100px;
+  }
+  &-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    flex-direction: row;
+    max-width: 765px;
+    margin-top: 56px;
+    @media (max-width: $small) {
+      margin-top: 36px;
+      max-width: 100%;
+    }
+    &-item {
+      width: 33%;
+      // width: 255px;
+      height: 198px;
+      box-shadow:
+        1px 0 0 0 #D3D3D3,
+        0 1px 0 0 #D3D3D3,
+        1px 1px 0 0 #D3D3D3,
+        1px 0 0 0 #D3D3D3 inset,
+        0 1px 0 0 #D3D3D3 inset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s;
+      @media (max-width: $small) {
+        width: 100%;
+      }
+      &:hover {
+        background-image: linear-gradient(45deg, #459BEA, #8FBAE1);
+        .preview {
+          display: none;
+        }
+        .link {
+          display: flex;
+
+        }
+      }
+      .preview {
+        padding: 10px;
+        @include size(100%, auto);
+        img {
+          display: block;
+          margin: auto;
+          max-width: 100%;
+          //transform: scale(0.8)
+        }
+        @media (max-width: $tablet) {
+
+        }
+      }
+      .link {
+        display: none;
+        color: #FFF;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        &-button {
+          width: 127px;
+          height: 43px;
+          font-size: 16px;
+          line-height: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #FFF;
+          border-radius: 4px;
+          color: #fff;
+          @include trans(all $transition-primary);
+          &:hover {
+            background-color: rgba(255,255,255, .2);
+          }
+        }
+        h3 {
+          font-size: 22px;
+          font-weight: 300;
+          margin-bottom: 10px;
+          //line-height: 55px;
+        }
+        @media (max-width: $tablet) {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

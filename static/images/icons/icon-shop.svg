@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>front-store</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shops-list" transform="translate(-559.000000, -173.000000)" fill="#4F6B81" fill-rule="nonzero">
+            <g id="front-store" transform="translate(559.000000, 173.000000)">
+                <path d="M15.1111111,0 L0.888888889,0 L0.888888889,1.75 L15.1111111,1.75 L15.1111111,0 Z M16,8.75 L16,7 L15.1111111,2.625 L0.888888889,2.625 L0,7 L0,8.75 L0.888888889,8.75 L0.888888889,14 L9.77777778,14 L9.77777778,8.75 L13.3333333,8.75 L13.3333333,14 L15.1111111,14 L15.1111111,8.75 L16,8.75 Z M8,12.25 L2.66666667,12.25 L2.66666667,8.75 L8,8.75 L8,12.25 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

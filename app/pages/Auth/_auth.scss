@@ -1,0 +1,140 @@
+.auth {
+  max-width: 520px;
+  padding-bottom: 25px;
+  @media (min-width: $screen){
+    padding-bottom: 80px;
+  }
+  .content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $middle){
+      display: block;
+    }
+    a {
+      font-size: 18px;
+      display: inline-block;
+      opacity: .5;
+      @include hover-link($color-primary, $color-blue);
+      font-weight: 500;
+
+      @media (min-width: $middle){
+        font-size: 20px;
+        margin-left: 55px;
+      }
+      @media (min-width: $tablet){
+        font-size: 22px;
+      }
+      @media (min-width: $screen){
+        font-size: 24px;
+
+      }
+
+    }
+  }
+  &-text {
+    margin: 0;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    input {
+      margin-right: 10px;
+      position: relative;
+      top: -2px;
+    }
+    a {
+      color: #67A1D6;
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+  &-modal {
+    @include fixed-point(0, 0);
+    @include size(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    @include trans(all $transition-primary $easing);
+    z-index: 66;
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      .auth-modal-dialog {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    &-close {
+      @include block(20px);
+      @include abs(15px, 15px);
+      @include bg-size('icons/icon-close.svg');
+    }
+    &-dialog {
+      background-color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      padding: 25px 30px;
+      box-shadow: rgba(#000, .2) 0 0 70px;
+      @include trans(all $transition-primary $easing);
+      transform: translate3d(0, -30px, 0);
+      position: relative;
+      max-width: 320px;
+      width: calc(100% - 40px);
+      .cabinet-title {
+        margin-bottom: 10px;
+
+      }
+      .cabinet-text {
+        margin-bottom: 15px;
+        a {
+          color: #67A1D6;
+          //text-decoration: underline;
+          display: inline-block;
+          line-height: 1.2;
+          border-bottom: 1px solid #67A1D6;
+          &:hover {
+            border-bottom: none;
+            //text-decoration: none;
+          }
+        }
+      }
+      .code-form {
+        width: 170px;
+        display: block;
+        margin: 0 auto 15px;
+        .form-block {
+          margin-bottom: 12px;
+        }
+        input {
+          text-align: center;
+          //@extend .form-control;
+          width: 100%;
+          height: 40px;
+          border-radius: 4px;
+          padding: 0;
+          border: 1px solid #2972FF;
+
+
+        }
+        .btn {
+          height: 40px;
+          width: 100%;
+        }
+
+      }
+    }
+  }
+  &-text {
+    font-size: 16px;
+    opacity: .64;
+    margin-top: 20px !important;
+    margin: 0 0 20px;
+    @media (min-width: $screen){
+      font-size: 18px;
+      margin: -30px 0 40px;
+    }
+  }
+
+}

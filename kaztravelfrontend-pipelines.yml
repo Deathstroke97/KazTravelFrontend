@@ -1,0 +1,16 @@
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+strategy:
+  matrix:
+    node_8_x:
+      node_version: 8.x
+
+steps:
+- task: NodeTool@0
+  inputs:
+    version: $(node_version)
+
+- script: npm install
+- script: npm run build
+# - script: mocha test --timeout 5000

@@ -1,0 +1,28 @@
+.privacy {
+    &-list {
+        margin: 52px 0 98px 0;
+        &-item {
+            display: flex;
+            align-items: center;
+            img {
+                width: 30px;
+                height: 37px;
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 38px;
+            }
+        }   
+    }
+    &-link {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        a {
+            color: #2A7CD8;
+            font-size: 18px;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
+}

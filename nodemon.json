@@ -1,0 +1,4 @@
+{
+  "verbose": false,
+  "ignore": ["app/*", "build/*", "pages/*", "store/*", "static/*", "selectors/*", "test/*" , "libs/*", "puiblic/"]
+}

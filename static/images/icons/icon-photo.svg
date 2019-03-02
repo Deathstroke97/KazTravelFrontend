@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="30px" viewBox="0 0 34 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>photo-camera (1) copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lk-turoperatora-setting" transform="translate(-442.000000, -351.000000)">
+            <g id="photo-camera-(1)-copy-2" transform="translate(442.000000, 351.000000)">
+                <path d="M27.8675945,5.17197975 C27.1122873,4.39080586 26.2012313,4.00010945 25.1337918,4.00010945 L21.7504364,4.00010945 L20.9802632,1.87527706 C20.7888573,1.36494733 20.4391104,0.924777671 19.9303348,0.554822821 C19.4217708,0.185032152 18.9007214,0 18.3669752,0 L10.6334479,0 C10.0997546,0 9.57859948,0.185032152 9.07003545,0.554822821 C8.56147143,0.924777671 8.21167164,1.36494733 8.02031868,1.87527706 L7.25003966,4.00010945 L3.86668429,4.00010945 C2.79913894,4.00010945 1.88803006,4.39080586 1.13272281,5.17197975 C0.377574269,5.95320837 0,6.89582706 0,8.00005473 L0,21.9999453 C0,23.1042277 0.377574269,24.0469558 1.13272281,24.8279655 C1.88803006,25.6093036 2.79919184,26 3.86668429,26 L25.1334214,26 C26.200861,26 27.111864,25.6093036 27.8672242,24.8279655 C28.6223198,24.0469558 28.9999999,23.1042277 28.9999999,21.9999453 L28.9999999,8.00005473 C29.0002115,6.89582706 28.6225314,5.95320837 27.8675945,5.17197975 Z" id="Shape" fill="#B9B9B9" fill-rule="nonzero"></path>
+                <circle id="Oval-7" fill="#D8D8D8" cx="17.5" cy="4.5" r="1.5"></circle>
+                <circle id="Oval-5" fill="#D8D8D8" cx="27.5" cy="23.5" r="6.5"></circle>
+                <circle id="Oval-8" fill="#D8D8D8" cx="15.5" cy="15.5" r="5.5"></circle>
+                <text id="+" font-family="Roboto-Black, Roboto" font-size="13.3770492" font-weight="700" fill="#B9B9B9">
+                    <tspan x="23" y="28">+</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

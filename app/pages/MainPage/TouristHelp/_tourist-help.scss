@@ -1,0 +1,119 @@
+.tourist-help {
+  padding-bottom: 50px;
+  visibility: visible !important;
+  &.wow {
+
+  }
+  @media (min-width: $middle){
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-link {
+    text-align: center;
+    color: #3E3D53;
+    display: block;
+    margin-bottom: 40px;
+    @include trans(all $transition-primary $easing);
+    transform: translate3d(-100px, 0, 0);
+    opacity: 0;
+    &:first-child {
+      transition-delay: .3s;
+    }
+    &:nth-child(2) {
+      transition-delay: .2s;
+    }
+    &:nth-child(3) {
+      transition-delay: .1s;
+    }
+    &:last-child {
+      transition-delay: 0s;
+    }
+    @media (min-width: $middle){
+      width: 50%;
+    }
+
+    @media (min-width: $tablet){
+      border-right: 1px solid #C7C7C7;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    &:last-child {
+      border-right: none;
+      margin-bottom: 0;
+    }
+    &:nth-child(2) {
+      .tourist-help-icon {
+        img {
+          transform: rotate(30deg) translate(30px, -20px);;
+        }
+      }
+
+    }
+
+  }
+  &-icon {
+    position: relative;
+    @include size(77px);
+    transform: translateX(-20px);
+    margin: 0 auto 20px;
+    &:before {
+      content: '';
+      border-radius: 50%;
+      @include block(76px);
+      background-color: #F5C93C;
+      flex-shrink: 0;
+      @include abs-point(0px, 0px);
+      @media (min-width: $screen){
+        top: 20px;
+      }
+    }
+
+    img {
+      display: block;
+      z-index: 1;
+      transform: translateX(40px);
+      max-width: 100%;
+      @media (min-width: $screen){
+        transform: translateX(20px);
+      }
+    }
+    @media (min-width: $screen){
+      @include size(115px);
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      transform: translateX(0px);
+    }
+  }
+  &-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    @media (min-width: $screen){
+      margin-bottom: 15px;
+
+    }
+  }
+  &-text {
+    padding: 0 30px;
+    p {
+      margin: 0;
+    }
+    @media (min-width: $screen){
+      font-size: 18px;
+      line-height: 26px;
+      padding: 0;
+    }
+
+  }
+  &.animated {
+    .tourist-help-link {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+  }
+}

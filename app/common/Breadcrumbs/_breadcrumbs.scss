@@ -1,0 +1,59 @@
+.breadcrumbs {
+  display: none;
+  @media (min-width: $middle){
+    display: block;
+    margin: 50px 0 20px;
+    &.mt0 {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: $screen){
+
+    margin: 70px 0 20px;
+    &.mt0 {
+      margin-top: 0;
+    }
+  }
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      color: $color-primary;
+      &:after {
+        content: '';
+        position: relative;
+        top: -2px;
+        @include inline-block(6px, 8px);
+        @include bg-size('icons/icon-divider.svg');
+        vertical-align: middle;
+        margin: 0 10px;
+
+      }
+      &:last-child:after {
+        content: none;
+      }
+      a {
+        color: $color-primary;
+
+
+      }
+    }
+  }
+  &-white {
+    ul {
+      li {
+        color: #fff;
+        &:after {
+          @include bg-size('icons/icon-divider-white.svg');
+        }
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.region {
+  &-banner {
+    background-repeat: no-repeat;
+    //background-size: 100% auto;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 560px;
+    @media (min-width: $screen){
+      padding-top: 235px;
+      height: 620px;
+    }
+    .container {
+      position: relative;
+    }
+  }
+  &-map {
+    img {
+      max-width: 100%;
+    }
+    @media (min-width: $screen){
+      @include abs(50%, 100px);
+      transform: translateY(-50%);
+    }
+  }
+  &-content {
+    &-article {
+      @media (min-width: $middle){
+        columns: 2;
+      }
+    }
+    .container {
+      .publications-slider:only-child {
+        @media (min-width: $screen){
+          margin: 0;
+        }
+      }
+    }
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    img {
+      max-width: 90px;
+    }
+    .under-link {
+      margin-top: 20px;
+    }
+    @media (min-width: $middle){
+      flex-direction: row;
+    }
+    @media (min-width: $screen){
+      margin: 0 0 80px;
+
+      .under-link {
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.trip-ideas {
+
+}

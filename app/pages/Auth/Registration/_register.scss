@@ -1,0 +1,47 @@
+.reg {
+  &-select {
+    margin-bottom: 20px;
+    @media (min-width: $middle){
+      margin-bottom: 35px;
+    }
+    &-label {
+      @extend .label-control;
+      margin-bottom: 10px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      @media (min-width: $middle){
+        flex-direction: row;
+      }
+      li {
+        font-size: 16px;
+        height: 45px;
+        line-height: 43px;
+        border-radius: 4px;
+        border: 1px solid #CACACA;
+        padding: 0 16px;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+        cursor: pointer;
+        text-align: center;
+        @include trans(all $transition-primary $easing);
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @media (min-width: $middle){
+          margin: 0 20px 0 0;
+          text-align: left;
+        }
+        &.active, &:hover {
+          background-color: #DCDCDC;
+          border-color: #DCDCDC;
+
+        }
+
+      }
+    }
+
+  }
+
+}

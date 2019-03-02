@@ -1,0 +1,84 @@
+.main-tabs {
+  //display: flex;
+  display: none;
+
+  @media (min-width: $middle){
+    margin-left: 10px;
+    display: flex;
+  }
+  li {
+    //flex: 1;
+
+    span {
+      display: block;
+      color: #3379FF;
+      font-size: 14px;
+      //line-height: 35px;
+      min-height: 37px;
+      font-weight: bold;
+      border: 1px solid #2B71F7;
+      background-color: #fff;
+      padding: 5px 19px;
+      text-align: center;
+
+      cursor: pointer;
+      @include trans(all $transition-primary);
+      @media (min-width: $middle){
+        font-size: 18px;
+        padding: 10px 20px;
+        font-weight: normal;
+      }
+    }
+    &:first-child {
+      span {
+        border-radius: 2px 0 0 2px;
+      }
+    }
+    &:last-child {
+      span {
+        border-radius: 0 2px 2px 0;
+      }
+    }
+    &:hover, &.active {
+      span {
+        background-color: #3379FF;
+        border-color: #3379FF;
+        color: #D6E4FF;
+      }
+    }
+  }
+  &-list {
+    font-size: 16px;
+    line-height: 26px;
+
+    padding: 0 30px;
+    margin: 0px 0 -20px;
+    li {
+      margin-bottom: 20px;
+    }
+    a {
+      @include hover-link($color-primary, #3379FF);
+    }
+
+  }
+}
+
+.main-panes {
+  position: relative;
+  //overflow: hidden;
+  display: none;
+  @media (min-width: $middle){
+    display: block;
+  }
+  .pane {
+    display: none;
+    //max-height: 600px;
+
+    @media (min-width: $tablet){
+      //max-height: 730px;
+    }
+    &--active {
+      display: block;
+    }
+  }
+}
